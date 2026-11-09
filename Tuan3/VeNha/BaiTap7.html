@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 7 - Wrapper Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .layout-wrapper {
+            width: 250px;
+            height: 260px;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 42px 1fr;
+            grid-template-rows: 40px 1fr 30px;
+            gap: 4px;
+            box-sizing: border-box;
+        }
+
+        .layout-wrapper header {
+            grid-column: 1 / 3;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .layout-wrapper nav {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .layout-wrapper main {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .layout-wrapper footer {
+            grid-column: 1 / 3;
+            border: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:center;">Bài 7: Bố cục Wrapper</h3>
+
+    <div class="layout-wrapper">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

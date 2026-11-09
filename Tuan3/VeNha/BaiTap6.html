@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6 - My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .portfolio {
+            width: min(445px, 95%);
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #F7F7F7;
+            box-sizing: border-box;
+        }
+
+        .portfolio h2 {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .portfolio .list-tab {
+            text-align: center;
+            padding: 0;
+        }
+
+        .portfolio .list-tab li {
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        .portfolio .list-tab a {
+            font-size: 8px;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .portfolio .list-tab li:first-child a {
+            color: #00A5A5;
+        }
+
+        .portfolio .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 0;
+        }
+
+        .portfolio .gallery li {
+            list-style: none;
+        }
+
+        .portfolio .gallery img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section class="portfolio">
+        <h2>MY PORTFOLIO</h2>
+
+        <ul class="list-tab">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Web App</a></li>
+            <li><a href="#">UI/UX</a></li>
+            <li><a href="#">Graphics Design</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Marketing</a></li>
+        </ul>
+
+        <ul class="gallery">
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 1"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 2"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 3"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 4"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 5"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 6"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 7"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 8"></a></li>
+            <li><a href="#"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt="Portfolio item 9"></a></li>
+        </ul>
+    </section>
+</body>
+</html>

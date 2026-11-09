@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Bài tập tuần 3</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f5f8;
+            color: #263238;
+            line-height: 1.6;
+        }
+        .container {
+            width: min(900px, 92%);
+            margin: 40px auto;
+        }
+        .profile, .assignments {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.07);
+            margin-bottom: 22px;
+        }
+        .profile { text-align: center; }
+        .profile img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1, h2 { margin-top: 10px; }
+        .social a, .assignment-list a {
+            color: #087e8b;
+            text-decoration: none;
+        }
+        .social a { margin: 0 8px; }
+        .assignment-list {
+            padding-left: 22px;
+        }
+        .assignment-list li { margin: 9px 0; }
+        .assignment-list a:hover, .social a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            color: #667085;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="profile">
+            <img src="images/anh-dai-dien.jpg" alt="Ảnh đại diện">
+            <h1>Nguyễn Kiều Oanh</h1>
+            <p><strong>Lớp:</strong> EE0002</p>
+            <p><strong>Trường:</strong> Đại học Kinh tế TP. Hồ Chí Minh (UEH)</p>
+            <p>Xin chào! Đây là trang cá nhân và nơi tổng hợp các bài tập thực hành HTML/CSS tuần 3 của tôi.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=61595502307266" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <p class="note">nguyenkieuoanh@gmail.com</p>
+        </section>
+
+        <section class="assignments">
+            <h2>Danh sách bài tập tuần 3</h2>
+            <ol class="assignment-list">
+                <li><a href="BaiTap1.html">Bài tập 1 - Ảnh minh chứng</a></li>
+                <li><a href="BaiTap2.html">Bài tập 2 - UEH-BIT và xử lý nội dung tràn</a></li>
+                <li><a href="BaiTap3.html">Bài tập 3 - Chọn bài 4, 5, 6, 7</a></li>
+                <li><a href="BaiTap4.html">Bài tập 4 - Danh sách môn học TMĐT, ERP, MIS, DS</a></li>
+                <li><a href="BaiTap5.html">Bài tập 5 - Best Shared Hosting Company</a></li>
+                <li><a href="BaiTap6.html">Bài tập 6 - My Portfolio</a></li>
+                <li><a href="BaiTap7.html">Bài tập 7 - Bố cục Wrapper</a></li>
+                <li><a href="BaiTap8.html">Bài tập 8 - The Bat Family</a></li>
+                <li><a href="BaiTap9.html">Bài tập 9 - Font Awesome Icons</a></li>
+            </ol>
+            <p class="note">Chọn tên bài tập để mở trang HTML tương ứng.</p>
+        </section>
+    </main>
+</body>
+</html>

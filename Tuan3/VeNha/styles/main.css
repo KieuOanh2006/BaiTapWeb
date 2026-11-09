@@ -1,0 +1,91 @@
+/* BAI TAP 8 - THE BAT FAMILY */
+
+/* i. Khung chua lon: rong 1024px va can giua trang */
+#root {
+    width: 1024px;
+    max-width: calc(100% - 32px);
+    margin: 30px auto;
+}
+
+/* ii. Tieu de: can giua, nen xam, logo con doi va chu co bong */
+#site-header {
+    margin: 20px 0;
+    padding: 8px 0;
+    min-height: 38px;
+    box-sizing: border-box;
+
+    background-color: #cccccc;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 36% center;
+    background-size: 42px auto;
+
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 3px #333333;
+    font-size: 22px;
+}
+
+/* Danh sach cac sieu anh hung */
+.superheroes {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+
+/* iii. Moi li co chieu rong co dinh, hien thi ngang va lam moc position */
+.superheroes li {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 2px;
+    transition: width 0.25s ease;
+}
+
+/* Ten nhan vat hien tren dau hinh */
+.hero-header {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 1px 1px 3px #000000;
+    z-index: 1;
+}
+
+/* iv. Hinh anh co vien, bo goc va khong vuot qua khung li */
+.superheroes img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* v. Link Read more mac dinh an, co kich thuoc bang the li */
+.superheroes a {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 0;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* vi. HOVER: mo rong the li va hien thi link Read more co gach chan */
+.superheroes li:hover {
+    width: 130px;
+}
+
+.superheroes li:hover a {
+    display: block;
+    text-decoration: underline;
+}
