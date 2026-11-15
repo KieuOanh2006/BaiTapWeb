@@ -1,0 +1,11 @@
+﻿var stringObject = new String("Hello World!");
+var stringLiteral = "Hello World!";
+document.write("<section class='result'><h2>String object and literal</h2>");
+document.write("<p>typeof stringObject: " + typeof stringObject + "</p>");
+document.write("<p>typeof stringLiteral: " + typeof stringLiteral + "</p>");
+document.write("<p>== : " + (stringObject == stringLiteral) + "</p>");
+document.write("<p>=== : " + (stringObject === stringLiteral) + "</p></section>");
+var today = new Date();
+document.write("<section class='result'><h2>Date and Math</h2><p>Today: " + today.toDateString() + "</p>");
+document.write("<p>Math.PI: " + Math.PI + "</p><p>Math.sqrt(64): " + Math.sqrt(64) + "</p>");
+document.write("<p>Math.random(): " + Math.random() + "</p></section>");
