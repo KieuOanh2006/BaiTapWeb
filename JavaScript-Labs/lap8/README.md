@@ -32,7 +32,3 @@ Các trang walkthrough 06–11 dùng tên file gốc trong source mẫu. Các tr
 Giữ nguyên `js/travel-data.js` và ảnh cờ gốc trong `flags/`; `countries` nguồn là danh sách có sẵn trong source mẫu. PDF hướng dẫn Lab 08 nằm trong ZIP nguồn tại `Lab08.pdf`.
 
 
-### Ảnh minh chứng 8.1
-
-Lưu ảnh bật/tắt bạn đã chụp vào images/evidence/javascript-enabled.png và images/evidence/javascript-disabled.png; trang 8.1 hiển thị chúng với chú thích tương ứng.
-
