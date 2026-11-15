@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trang cá nhân Nguyễn Kiều Oanh — tổng hợp Lab JavaScript 08, 09 và 10.">
+  <title>Nguyễn Kiều Oanh | JavaScript Labs</title>
+  <style>
+    :root { --ink:#18324b; --muted:#64748b; --brand:#176b87; --brand-dark:#12445e; --line:#dce6ed; --paper:#fff; --bg:#f3f7fa; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:var(--brand); }
+    .wrap { width:min(1080px, calc(100% - 2rem)); margin:0 auto; }
+    .hero { padding:3.5rem 0 2.5rem; background:radial-gradient(circle at 85% 15%,#3a92a7 0,transparent 28%),linear-gradient(130deg,#112e49,#176b87); color:#fff; }
+    .hero-inner { display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:center; }
+    .eyebrow { margin:0 0 .5rem; color:#bce7ef; font-size:.82rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:.15rem 0; font-size:clamp(2.2rem,6vw,3.6rem); line-height:1.1; }
+    .hero p { max-width:680px; margin:.8rem 0 0; color:#e1f1f5; }
+    .avatar { width:150px; height:150px; border:5px solid #ffffffa8; border-radius:50%; box-shadow:0 12px 32px #001a2e66; }
+    .identity { display:flex; flex-wrap:wrap; gap:.55rem; margin:1.35rem 0 0; }
+    .identity span,.identity a { display:inline-block; padding:.4rem .8rem; border:1px solid #ffffff55; border-radius:999px; color:#fff; text-decoration:none; background:#ffffff12; }
+    nav { position:sticky; top:0; z-index:5; background:#fffffff2; border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    nav .wrap { display:flex; flex-wrap:wrap; gap:.3rem 1.2rem; padding:.7rem 0; }
+    nav a { color:var(--ink); font-weight:650; text-decoration:none; }
+    nav a:hover { color:var(--brand); }
+    main { padding:2rem 0 3rem; }
+    section { scroll-margin-top:4.5rem; margin:1.4rem 0; padding:clamp(1.2rem,3vw,2rem); border:1px solid var(--line); border-radius:18px; background:var(--paper); box-shadow:0 8px 25px #1d3d5708; }
+    h2 { margin:0 0 .8rem; font-size:1.55rem; }
+    h3 { margin:.2rem 0 .45rem; font-size:1.15rem; }
+    .intro { font-size:1.08rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+    .lab-card { display:flex; flex-direction:column; gap:.6rem; padding:1.25rem; border:1px solid var(--line); border-radius:14px; background:linear-gradient(180deg,#fff,#f8fbfd); }
+    .lab-number { color:var(--brand); font-size:.8rem; font-weight:750; letter-spacing:.08em; text-transform:uppercase; }
+    .lab-card p { flex:1; margin:.1rem 0; color:var(--muted); }
+    .button { display:inline-block; width:fit-content; padding:.58rem .95rem; border-radius:9px; color:#fff; background:var(--brand); font-weight:700; text-decoration:none; }
+    .button:hover { background:var(--brand-dark); }
+    .skills { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+    .skill { padding:1rem; border-left:4px solid #59a7b5; background:#f5fafb; border-radius:0 10px 10px 0; }
+    .skill p { margin:.4rem 0 0; color:var(--muted); }
+    .self-review { border-left:5px solid #e8ad4d; background:#fffaf0; }
+    .self-review p:last-child { margin-bottom:0; }
+    footer { padding:1.6rem 0 2.5rem; color:var(--muted); text-align:center; }
+    @media(max-width:760px) { .grid,.skills { grid-template-columns:1fr; } .avatar { width:112px;height:112px; } .hero-inner { gap:1rem; } }
+    @media(max-width:520px) { .hero { padding:2.4rem 0 1.8rem; } .hero-inner { grid-template-columns:1fr; } .avatar { grid-row:1; width:92px;height:92px; } nav .wrap { gap:.5rem 1rem; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow">Hồ sơ học tập · Phát triển ứng dụng web</p>
+        <h1>Nguyễn Kiều Oanh</h1>
+        <p>Không gian tổng hợp quá trình học JavaScript qua ba chủ đề: nền tảng ngôn ngữ, DOM và sự kiện, cùng thư viện jQuery.</p>
+        <div class="identity" aria-label="Thông tin sinh viên">
+          <span>MSSV: 31241025891</span>
+          <span>Lớp học phần: EE0002</span>
+          <a href="https://github.com/KieuOanh2006" target="_blank" rel="noopener noreferrer">GitHub cá nhân ↗</a>
+        </div>
+      </div>
+      <svg class="avatar" role="img" aria-label="Avatar minh họa chữ KO" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="avatarBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce7ef"/><stop offset="1" stop-color="#f6d9b8"/></linearGradient></defs>
+        <circle cx="80" cy="80" r="78" fill="url(#avatarBg)"/>
+        <circle cx="80" cy="61" r="29" fill="#fff" opacity=".92"/>
+        <path d="M28 143c5-31 25-47 52-47s47 16 52 47" fill="#fff" opacity=".92"/>
+        <text x="80" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#176b87">KO</text>
+      </svg>
+    </div>
+  </header>
+  <nav aria-label="Điều hướng trang">
+    <div class="wrap"><a href="#gioi-thieu">Giới thiệu</a><a href="#vai-tro-js">JavaScript trong web</a><a href="#labs">Ba Lab</a><a href="#kien-thuc">Kỹ năng</a><a href="#tu-danh-gia">Tự đánh giá</a></div>
+  </nav>
+  <main class="wrap">
+    <section id="gioi-thieu">
+      <h2>Mục tiêu học tập</h2>
+      <p class="intro">Mục tiêu của ba Lab là xây dựng kiến thức JavaScript theo từng bước, từ cú pháp và kiểu dữ liệu đến việc cập nhật giao diện, phản hồi thao tác người dùng và tải dữ liệu bất đồng bộ.</p>
+      <p>Thông qua các bài thực hành, tôi rèn cách đọc source mẫu, tổ chức HTML/CSS/JavaScript theo thư mục, kiểm tra kết quả bằng trình duyệt và xử lý lỗi qua Developer Tools.</p>
+    </section>
+    <section id="vai-tro-js">
+      <h2>Vai trò của JavaScript trong ứng dụng web</h2>
+      <p>HTML định nghĩa nội dung, CSS định dạng giao diện, còn JavaScript giúp trang web phản hồi theo hành động và dữ liệu. JavaScript có thể cập nhật DOM, kiểm tra biểu mẫu, xử lý sự kiện, tạo hiệu ứng và trao đổi dữ liệu với máy chủ mà không cần tải lại toàn bộ trang.</p>
+      <p>Trong ứng dụng thương mại điện tử, các khả năng này hỗ trợ tương tác như xác thực thông tin, cập nhật nội dung sản phẩm và tải dữ liệu đơn hàng linh hoạt.</p>
+    </section>
+    <section id="labs">
+      <h2>Truy cập các bài thực hành</h2>
+      <div class="grid">
+        <article class="lab-card"><span class="lab-number">Lab 08</span><h3>JavaScript 1: Language Foundations</h3><p>Biến, kiểu dữ liệu, mảng, hàm, object, built-in objects và arrays of objects.</p><a class="button" href="lap8/index.html">Mở Lab 08</a></article>
+        <article class="lab-card"><span class="lab-number">Lab 09</span><h3>JavaScript 2: DOM and Events</h3><p>Chọn và sửa DOM, tạo/xóa node, xử lý sự kiện, biểu mẫu và debugging.</p><a class="button" href="lap9/index.html">Mở Lab 09</a></article>
+        <article class="lab-card"><span class="lab-number">Lab 10</span><h3>JavaScript 3: jQuery</h3><p>jQuery selectors, thao tác DOM, event handlers, hiệu ứng và AJAX.</p><a class="button" href="lap10/index.html">Mở Lab 10</a></article>
+      </div>
+    </section>
+    <section id="kien-thuc">
+      <h2>Kiến thức và kỹ năng qua từng Lab</h2>
+      <div class="skills">
+        <article class="skill"><h3>Lab 08 · Nền tảng</h3><p>Dùng biến, điều kiện, vòng lặp, mảng, hàm và object; hiểu phạm vi biến, kiểu dữ liệu và cách liên kết JavaScript.</p></article>
+        <article class="skill"><h3>Lab 09 · DOM &amp; Events</h3><p>Truy cập và cập nhật node, tạo event listener, xử lý form, kiểm tra dữ liệu và dùng breakpoint/Console để tìm lỗi.</p></article>
+        <article class="skill"><h3>Lab 10 · jQuery</h3><p>Viết selector gọn, thao tác DOM theo nhóm phần tử, gắn sự kiện, chạy animation và gửi AJAX request để hiển thị JSON.</p></article>
+      </div>
+    </section>
+    <section id="tu-danh-gia" class="self-review">
+      <h2>Tự đánh giá kết quả học tập</h2>
+      <p>Tôi đã hoàn thành các nội dung thực hành theo ba chủ đề và có thể liên kết kiến thức JavaScript với giao diện web. Tôi tự tin hơn khi đọc lỗi trên Console, chọn phần tử DOM và xử lý các tương tác cơ bản.</p>
+      <p>Tôi cần tiếp tục luyện cách tổ chức mã dễ bảo trì, kiểm tra nhiều trường hợp dữ liệu đầu vào và xử lý lỗi mạng trong các thao tác bất đồng bộ.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Nguyễn Kiều Oanh · MSSV 31241025891 · EE0002</div></footer>
+</body>
+</html>
