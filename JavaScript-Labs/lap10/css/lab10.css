@@ -118,4 +118,9 @@ input.selected { background:#fff1b8; outline:2px solid #edae49; }
 .post-meta { color:#687983; font-size:.9rem; }
 .error-message { padding:1rem; color:#842029; background:#f8d7da; }
 .loading-message { color:#176b87; }
+.animLoading { display:flex; align-items:center; gap:.65rem; margin:1rem 0; color:#176b87; }
+.animLoading[hidden] { display:none; }
+.animLoading img { width:24px; height:24px; }
+#consume { padding:.55rem 1rem; cursor:pointer; }
+#consume:disabled { cursor:wait; opacity:.65; }
 @media(max-width:600px) { .post-card { display:block; } .post-card img { width:100%; max-width:260px; } }

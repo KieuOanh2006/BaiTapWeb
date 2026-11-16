@@ -1,23 +1,36 @@
-﻿$(function () {
-  var $button = $('#consume'), $spinner = $('.animLoading'), $list = $('#results ul');
-  $spinner.hide();
+$(function () {
+  var $button = $('#consume');
+  var $loading = $('.animLoading');
+  var $list = $('#results ul');
+
   $button.on('click', function () {
+    var startedAt = Date.now();
     $button.prop('disabled', true);
     $list.empty();
-    $spinner.show();
-    $.ajax({ url: 'data/posts.json', dataType: 'json', cache: false })
-      .done(function (posts) {
-        $.each(posts, function (_, post) {
-          var $item = $('<li class="post-card"></li>');
-          $('<img>').attr({ src: post.image, alt: post.title }).appendTo($item);
-          var $detail = $('<div></div>').appendTo($item);
-          $('<h2></h2>').text(post.title).appendTo($detail);
-          $('<p class="post-meta"></p>').text(post.author + ' · ' + post.date).appendTo($detail);
-          $('<p></p>').text(post.excerpt).appendTo($detail);
-          $list.append($item);
-        });
+    $loading.prop('hidden', false);
+
+    $.get('data/cities.json', function (cities) {
+      $.each(cities, function (_, city) {
+        $('<li></li>').text(city.name + (city.country ? ', ' + city.country : '')).appendTo($list);
+      });
+    }, 'json')
+      .done(function () {
+        if (!$list.children().length) {
+          $('<li class="loading-message"></li>').text('Không có thành phố để hiển thị.').appendTo($list);
+        }
       })
-      .fail(function () { $list.html('<li class="error-message">Unable to load posts. Run this page from localhost or GitHub Pages.</li>'); })
-      .always(function () { $spinner.hide(); $button.prop('disabled', false); });
+      .fail(function () {
+        $list.empty().append(
+          $('<li class="error-message" role="alert"></li>').text('Không tải được danh sách thành phố. Hãy chạy trang qua localhost hoặc GitHub Pages.')
+        );
+      })
+      .always(function () {
+        // Keep the indicator visible long enough to notice on fast local requests.
+        var remaining = Math.max(0, 1500 - (Date.now() - startedAt));
+        window.setTimeout(function () {
+          $loading.prop('hidden', true);
+          $button.prop('disabled', false);
+        }, remaining);
+      });
   });
 });
