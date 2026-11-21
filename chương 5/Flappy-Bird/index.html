@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bce9ed">
+  <meta name="description" content="Trò chơi Flappy Bird dùng HTML, CSS, JavaScript và jQuery với level, pause và lưu điểm cao.">
+  <title>Chim Nhỏ Phiêu Lưu · Flappy Bird</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-heading">
+      <p class="eyebrow">BÀI 3 · ADVANCE FRONT-END</p>
+      <h1>Chim Nhỏ <span>Phiêu Lưu</span></h1>
+      <p class="intro">Giữ nhịp bay, lách qua những đường ống và chinh phục mốc 50 điểm.</p>
+    </header>
+
+    <section class="game-card" aria-label="Trò chơi Chim Nhỏ Phiêu Lưu">
+      <div class="game-toolbar">
+        <div class="level-badge" id="level_display" aria-live="polite"><span>LEVEL</span><strong id="level_value">1</strong></div>
+        <div class="scoreboard">
+          <div><span>ĐIỂM</span><strong id="score">0</strong></div>
+          <div><span>KỶ LỤC</span><strong id="high_score">0</strong></div>
+        </div>
+        <button id="pause_btn" class="icon-button" type="button" aria-label="Tạm dừng" title="Tạm dừng (P)" disabled><span class="pause-icon" aria-hidden="true">Ⅱ</span></button>
+      </div>
+
+      <div id="container" class="game-board" role="application" aria-label="Khung game. Nhấn ArrowDown để bay, Enter để bắt đầu.">
+        <div class="board-sky" aria-hidden="true"></div>
+        <div class="cloud cloud-one" aria-hidden="true"></div>
+        <div class="cloud cloud-two" aria-hidden="true"></div>
+        <div class="distant-hills" aria-hidden="true"></div>
+        <div id="bird" role="img" aria-label="Chim nhỏ màu vàng"><img src="sprites/bird.svg" alt=""></div>
+        <div id="pipe_pair" aria-hidden="true">
+          <div id="pole_1" class="pipe pipe-top"></div>
+          <div id="pole_2" class="pipe pipe-bottom"></div>
+        </div>
+        <div class="ground" aria-hidden="true"><span></span></div>
+        <div class="board-hud"><span class="wind-dot"></span> BẦU TRỜI XANH</div>
+
+        <div id="game_overlay" class="game-overlay" role="status" aria-live="polite">
+          <div class="overlay-card">
+            <div id="overlay_emoji" class="overlay-emoji" aria-hidden="true">🐤</div>
+            <p id="overlay_kicker" class="overlay-kicker">SẴN SÀNG CẤT CÁNH?</p>
+            <h2 id="overlay_title">Một chạm phím, vạn dặm trời</h2>
+            <p id="overlay_message">Nhấn <kbd>Enter</kbd> để bắt đầu. Dùng <kbd>↓ ArrowDown</kbd> để vỗ cánh bay lên.</p>
+            <button id="play_btn" class="primary-button" type="button">Bắt đầu chơi <span aria-hidden="true">→</span></button>
+            <button id="restart_btn" class="primary-button" type="button" hidden>Chơi lại <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
+        <div id="level_toast" class="level-toast" aria-live="polite"></div>
+      </div>
+
+      <div class="game-footer">
+        <p><kbd>↓</kbd> ArrowDown <span>bay lên</span><i>·</i><kbd>Enter</kbd> bắt đầu / chơi lại<i>·</i><kbd>P</kbd> tạm dừng</p>
+        <p class="credit">Mỗi cặp ống an toàn = 1 điểm</p>
+      </div>
+    </section>
+    <footer class="page-footer">Làm bằng HTML, CSS, JavaScript &amp; jQuery <span>✦</span> Nguyễn Kiều Oanh · 31241025891</footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

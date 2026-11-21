@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 590" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9cdae7"/><stop offset=".7" stop-color="#d8f2e9"/><stop offset="1" stop-color="#f2edc9"/></linearGradient></defs>
+  <rect width="420" height="590" fill="url(#sky)"/>
+  <circle cx="328" cy="95" r="38" fill="#ffe89b" opacity=".92"/><circle cx="328" cy="95" r="51" fill="#ffe89b" opacity=".2"/>
+  <!-- Chữ ký cá nhân đặt nhỏ, nhạt để tạo dấu ấn mà không lấn khu vực chơi. -->
+  <g fill="#39747e" opacity=".68" font-family="Georgia,serif" font-style="italic">
+    <text x="17" y="76" font-size="16" letter-spacing=".5">Kiều Oanh</text>
+    <text x="19" y="92" font-size="9" font-family="Arial,sans-serif" font-style="normal" letter-spacing="2.1">NO.1</text>
+  </g>
+  <g fill="#ef91ad" opacity=".42">
+    <path d="M379 164c-7-9-18 1 0 15 18-14 7-24 0-15z"/>
+    <path d="M45 284c-5-7-14 1 0 11 14-10 5-18 0-11z" transform="scale(.8) translate(12 73)"/>
+    <path d="M341 337c-4-6-12 1 0 9 12-8 4-15 0-9z"/>
+  </g>
+  <g fill="#fff" opacity=".58"><ellipse cx="80" cy="145" rx="47" ry="13"/><circle cx="57" cy="137" r="19"/><circle cx="80" cy="128" r="25"/><circle cx="106" cy="139" r="17"/><ellipse cx="275" cy="230" rx="35" ry="10"/><circle cx="258" cy="224" r="14"/><circle cx="278" cy="218" r="18"/><circle cx="297" cy="228" r="13"/></g>
+  <path d="M0 405q72-84 144-3t139-9q69-72 137 4v193H0z" fill="#b4e0bc" opacity=".6"/>
+  <path d="M0 460q80-62 161 0t132-6q65-42 127 13v126H0z" fill="#8dcc9d" opacity=".48"/>
+</svg>

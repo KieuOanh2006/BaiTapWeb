@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90">
+  <defs><linearGradient id="body" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#ffe779"/><stop offset="1" stop-color="#ffb84f"/></linearGradient><linearGradient id="wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff3a5"/><stop offset="1" stop-color="#ff9e57"/></linearGradient></defs>
+  <path d="M18 56 3 49l8 19 16-2" fill="#f18a69" stroke="#b86754" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="57" cy="49" rx="39" ry="29" fill="url(#body)" stroke="#a97135" stroke-width="3"/>
+  <path d="M47 48c-13-18-28-7-26 5 2 13 19 18 34 9" fill="url(#wing)" stroke="#c47c42" stroke-width="3" stroke-linecap="round"/>
+  <path d="M81 48q20-14 32-5-9 13-31 13" fill="#ef815e" stroke="#a9574d" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="73" cy="34" rx="11" ry="13" fill="#fff" stroke="#9e6d43" stroke-width="2.5"/>
+  <circle cx="77" cy="35" r="5" fill="#244b59"/><circle cx="79" cy="33" r="1.6" fill="#fff"/>
+  <!-- Kính tròn màu hồng là điểm nhận diện riêng của bạn chim. -->
+  <g fill="none" stroke="#ed78a5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="72" cy="34" r="12"/><circle cx="96" cy="34" r="10"/><path d="M84 33q3-3 7 0M60 32l-5-3"/>
+  </g>
+  <path d="M37 31c-4-5-11 1 0 9 11-8 4-14 0-9" fill="#f18aaf" opacity=".95"/>
+  <path d="M43 72q17 7 31-1" fill="none" stroke="#e89a43" stroke-width="3" stroke-linecap="round"/>
+  <path d="m44 76-3 9m13-7-1 8m13-9 2 7" stroke="#bd7544" stroke-width="3" stroke-linecap="round"/>
+</svg>
