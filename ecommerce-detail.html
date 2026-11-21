@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LUMIÉ BEAUTY - Chăm sóc làn da theo cách dịu dàng.">
+  <title>Chi tiết sản phẩm | LUMIÉ BEAUTY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/css/star-rating.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head><body>
+  <div class="announcement">Ưu đãi chào mùa mới · Miễn phí vận chuyển cho đơn từ 599.000đ</div>
+  <div class="container topbar">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3"><a class="brand" href="index.html">LUMIÉ<small>BEAUTY & CARE</small></a></div>
+      <div class="col-xs-6 col-sm-9">
+        <div class="nav-tools pull-right">
+          <form class="search-box hidden-xs" id="top-search-form"><input type="search" id="top-search" placeholder="Tìm sản phẩm..." aria-label="Tìm sản phẩm"><span class="glyphicon glyphicon-search"></span></form>
+          <a href="#" data-toggle="modal" data-target="#signInModal" aria-label="Đăng nhập"><span class="glyphicon glyphicon-user"></span></a>
+          <a href="cart.html" aria-label="Giỏ hàng"><span class="glyphicon glyphicon-shopping-cart"></span><span class="cart-count" id="cart-count">0</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default nav-main">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false"><span class="sr-only">Mở menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand visible-xs" href="index.html">LUMIÉ</a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#shop">Sản phẩm</a></li>
+          <li><a href="index.html#about">Về LUMIÉ</a></li>
+          <li class=""><a href="ecommerce-status.html">Đơn hàng</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"><li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li></ul>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInTitle">
+    <div class="modal-dialog" role="document"><div class="modal-content">
+      <div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span>&times;</span></button><h4 class="modal-title" id="signInTitle">Chào mừng trở lại</h4></div>
+      <div class="modal-body"><form id="signin-form"><div class="form-group"><label for="signin-email">Email</label><input class="form-control" id="signin-email" type="email" required placeholder="ban@email.com"></div><div class="form-group"><label for="signin-password">Mật khẩu</label><input class="form-control" id="signin-password" type="password" required placeholder="••••••••"></div><button class="btn btn-lumie btn-block" type="submit">Đăng nhập</button><p class="help-block" style="margin-top:12px">Đây là giao diện minh họa, chưa kết nối hệ thống tài khoản.</p></form></div>
+    </div></div>
+  </div>
+  <main class="container">
+    <ol class="breadcrumb"><li><a href="index.html">Trang chủ</a></li><li><a href="index.html#shop">Sản phẩm</a></li><li class="active" id="breadcrumb-product">Chi tiết sản phẩm</li></ol>
+    <div class="row detail-panel">
+      <div class="col-sm-6">
+        <div class="xzoom-container"><img id="main-image" class="xzoom detail-main-image" src="assets/images/serum.svg" xoriginal="assets/images/serum.svg" alt="Ảnh sản phẩm LUMIÉ"><div class="detail-thumbnails" id="detail-thumbnails"></div></div>
+      </div>
+      <div class="col-sm-6">
+        <span class="eyebrow" id="detail-category">LUMIÉ SKINCARE</span><h1 class="detail-title" id="detail-name">Serum Dưỡng Sáng Radiance</h1>
+        <div class="rating-line"><input id="detail-rating" class="rating-control" value="4.9" type="number" min="0" max="5" step="0.1"><span class="rating-count" id="detail-reviews">(128 đánh giá)</span></div>
+        <div class="detail-price" id="detail-price">429.000đ <span class="detail-old-price">520.000đ</span></div>
+        <p class="detail-desc" id="detail-description">Tinh chất dưỡng sáng, giúp làn da trông tươi tắn và ẩm mượt.</p>
+        <div class="product-meta"><span id="detail-sku">Mã sản phẩm: LM-SR-001</span><span class="pull-right">Tình trạng: <strong style="color:#75866f">Còn hàng</strong></span></div>
+        <form id="add-detail-form">
+          <label class="choice-label">Dung tích</label><div class="choice-row" id="size-choices"><button type="button" class="choice-btn active">30 ml</button><button type="button" class="choice-btn">50 ml</button></div>
+          <label class="choice-label">Số lượng</label><input class="quantity-input" id="detail-quantity" type="number" min="1" max="20" value="1">
+          <div class="detail-buttons"><button class="btn btn-lumie" type="submit"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ</button><button class="btn btn-outline" type="button" id="contact-seller">Liên hệ tư vấn</button></div>
+        </form>
+        <div class="stock-detail"><strong><span class="glyphicon glyphicon-leaf"></span> Tình trạng kho</strong><p id="detail-stock-text">Còn 18 sản phẩm trong kho</p><div class="progress"><div class="progress-bar" id="detail-stock-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width:36%"></div></div><small class="text-muted">Thanh trạng thái sử dụng Bootstrap Progress Bar.</small></div>
+      </div>
+    </div>
+    <ul class="nav nav-tabs content-tabs" role="tablist"><li class="active"><a href="#description-tab" role="tab" data-toggle="tab">Mô tả sản phẩm</a></li><li><a href="#reviews-tab" role="tab" data-toggle="tab">Đánh giá</a></li></ul>
+    <div class="tab-content"><div class="tab-pane active" id="description-tab"><h4>Thông tin sản phẩm</h4><p id="detail-long-description">Kết cấu mỏng nhẹ, phù hợp với chu trình chăm sóc da hằng ngày. Thông tin sản phẩm là dữ liệu minh họa cho bài thực hành.</p><p><strong>Lưu ý:</strong> Website sử dụng dữ liệu và hình ảnh mô phỏng, không phải cửa hàng đang kinh doanh thực tế.</p></div><div class="tab-pane" id="reviews-tab"><div id="review-list"><div class="review-item"><strong>Ngọc Anh</strong> <small> · 2 ngày trước</small><div><input class="rating-control" type="number" value="5" min="0" max="5" step="1"></div><p>Sản phẩm có bao bì đẹp, thông tin hiển thị rõ ràng.</p></div><div class="review-item"><strong>Minh Thư</strong> <small> · 5 ngày trước</small><div><input class="rating-control" type="number" value="4" min="0" max="5" step="1"></div><p>Giao diện sản phẩm dễ xem và dễ lựa chọn.</p></div></div><form class="review-form" id="review-form"><h4>Viết đánh giá của bạn</h4><div class="form-group"><label for="review-name">Tên của bạn</label><input id="review-name" class="form-control" required placeholder="Nhập tên"></div><div class="form-group"><label>Đánh giá</label><input id="review-score" class="rating-control" type="number" value="5" min="1" max="5" step="1"></div><div class="form-group"><label for="review-text">Nhận xét</label><textarea id="review-text" class="form-control" rows="3" required placeholder="Chia sẻ cảm nhận..."></textarea></div><button class="btn btn-lumie" type="submit">Gửi đánh giá</button></form></div></div>
+    <section style="margin-top:45px"><div class="section-heading"><span class="eyebrow">You may also like</span><h2>Có thể bạn cũng thích</h2></div><div class="row" id="related-grid"></div></section>
+  </main>
+  <footer class="footer" id="about">
+    <div class="container"><div class="row">
+      <div class="col-sm-4"><a class="brand" href="index.html">LUMIÉ<small>BEAUTY & CARE</small></a><p style="margin-top:20px;max-width:300px">Chăm sóc làn da bằng những lựa chọn nhẹ nhàng. LUMIÉ là website thương mại điện tử mô phỏng phục vụ bài thực hành Front-end.</p></div>
+      <div class="col-xs-6 col-sm-2"><h4>Khám phá</h4><ul class="list-unstyled"><li><a href="index.html">Trang chủ</a></li><li><a href="index.html#shop">Sản phẩm</a></li><li><a href="ecommerce-status.html">Đơn hàng</a></li></ul></div>
+      <div class="col-xs-6 col-sm-3"><h4>Hỗ trợ khách hàng</h4><ul class="list-unstyled"><li><a href="cart.html">Giỏ hàng</a></li><li><a href="ecommerce-status.html">Theo dõi đơn hàng</a></li><li><a href="#">Chính sách đổi trả</a></li></ul></div>
+      <div class="col-sm-3"><h4>Liên hệ</h4><p>Email: hello@lumiebeauty.example<br>Hotline: 1900 0000<br>TP. Hồ Chí Minh, Việt Nam</p></div>
+    </div><div class="footer-bottom">© 2026 LUMIÉ BEAUTY · Website thực hành môn Phát triển ứng dụng TMĐT.</div></div>
+  </footer>
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xzoom@1.0.15/dist/xzoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

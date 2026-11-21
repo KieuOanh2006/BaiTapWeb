@@ -1,0 +1,16 @@
+BẢNG KIỂM TRA TRƯỚC KHI NỘP – BT CHƯƠNG 5
+
+[ ] Mở index.html, trang chủ hiển thị đúng.
+[ ] Thanh menu co giãn được trên điện thoại.
+[ ] Tìm kiếm, lọc danh mục và sắp xếp hoạt động.
+[ ] Thẻ sản phẩm có % giảm giá và nhãn New/Best Seller.
+[ ] Progress Bar hiển thị tình trạng tồn kho.
+[ ] Rating sao hiển thị bằng Bootstrap Star Rating.
+[ ] Mở trang chi tiết và thử rê chuột lên ảnh để xZoom hoạt động.
+[ ] Thử chọn dung tích và số lượng.
+[ ] Thêm sản phẩm vào giỏ; badge giỏ hàng cập nhật.
+[ ] Thay đổi số lượng/xóa sản phẩm trong giỏ.
+[ ] Trang trạng thái đơn hàng truy cập được.
+[ ] Chụp ảnh minh chứng các trang và tính năng để đưa vào báo cáo Word.
+[ ] Upload toàn bộ thư mục BT chương 5 lên GitHub.
+[ ] Kiểm tra website qua GitHub Pages sau khi deploy.
