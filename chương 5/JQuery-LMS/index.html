@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hướng dẫn thực hành jQuery đọc danh sách bài tập và chủ đề từ LMS UEH.">
+  <title>Bài 2 – jQuery LMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">ADVANCE FRONT-END · BÀI 2</p>
+      <h1>jQuery LMS</h1>
+      <p class="lead">Đọc bài tập, chủ đề và hạn nộp trực tiếp từ trang môn học LMS UEH đang mở.</p>
+      <a class="button" href="https://lms.ueh.edu.vn/course/view.php?id=43861" target="_blank" rel="noopener">Mở môn học UEH · Course 43861</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="card">
+      <h2>Cách chạy trên trang LMS</h2>
+      <ol>
+        <li>Mở môn học UEH bằng nút phía trên và đăng nhập bằng tài khoản sinh viên của bạn.</li>
+        <li>Đảm bảo đang ở trang môn học có Course ID <code>43861</code>.</li>
+        <li>Mở DevTools bằng <kbd>F12</kbd>, chọn tab <strong>Console</strong>.</li>
+        <li>Mở file <code>jquery-lms.js</code> bằng trình soạn thảo, sao chép toàn bộ nội dung và dán vào Console của trang LMS, sau đó nhấn <kbd>Enter</kbd>.</li>
+        <li>Xem kết quả trong bảng được thêm vào trang LMS và trong Console.</li>
+      </ol>
+      <p class="note"><strong>Bảo mật:</strong> Không chia sẻ mật khẩu. Script chỉ đọc DOM của trang môn học đang mở, không gửi dữ liệu đi nơi khác và không thay đổi nội dung khóa học.</p>
+    </section>
+    <section class="card">
+      <h2>Kết quả được tạo</h2>
+      <ul>
+        <li>Danh sách bài tập được đánh số từ 1; tên bài tập thứ 5 được ghi ra Console và hiển thị riêng.</li>
+        <li>Bảng thống kê từng chủ đề, số lượng và tên bài tập, deadline cùng trạng thái có/không có bài tập.</li>
+        <li>Nếu không tìm thấy ngày hạn nộp, kết quả ghi “Chưa xác định deadline”.</li>
+        <li>Nếu cấu trúc trang không được nhận diện, bảng chẩn đoán báo selector chưa tìm thấy để bạn kiểm tra DOM.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Lưu ý</h2>
+      <p>jQuery phải có sẵn trên trang LMS. Nếu chưa có, script sẽ báo lỗi hướng dẫn và dừng an toàn. Tên chủ đề và deadline phụ thuộc cấu trúc HTML, nội dung và ngôn ngữ thực tế của trang sau khi đăng nhập.</p>
+      <p>Đây là trang hướng dẫn độc lập. Bảng kết quả chỉ được chèn vào trang LMS sau khi bạn chạy script.</p>
+    </section>
+    <footer>Thực hành jQuery · Dữ liệu chỉ đọc từ trang LMS UEH hiện tại</footer>
+  </main>
+</body>
+</html>
