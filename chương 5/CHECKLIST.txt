@@ -1,6 +1,6 @@
 BẢNG KIỂM TRA TRƯỚC KHI NỘP – BT CHƯƠNG 5
 
-[ ] Mở index.html, trang chủ hiển thị đúng.
+[ ] Mở index.html: kiểm tra trang giới thiệu và menu 3 bài.
 [ ] Thanh menu co giãn được trên điện thoại.
 [ ] Tìm kiếm, lọc danh mục và sắp xếp hoạt động.
 [ ] Thẻ sản phẩm có % giảm giá và nhãn New/Best Seller.
